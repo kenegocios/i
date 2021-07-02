@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>Aguarde...</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+<base href="https://kenegocios.github.io/app/b">
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        pointer-events: visible;
+    }
+</style>
 
+<body id="keblog" class="w3-white">
+
+    <div class="w3-container w3-text-theme w3-padding-16">
+        <center>
+            <h3><b>Patrocinado</b></h3>   
+        </center>
+        <div class="w3-container w3-text-theme" style="width: 100%; height:auto;">
+            <table style=" width: 100%; ">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div><center>
+                                <div class="w3-white w3-center" style="border:0px; border-radius:10px; padding:0; width:100%; height:100%; overflow:hidden">
+                                    <!--<a href="https://a-ads.com/?partner=1611481">Patrocinado</a>-->
+                                    <p><iframe data-aa="1611481" src="//ad.a-ads.com/1611481?size=250x250" scrolling="no" style="border:0px; padding:32; width:250px; height:250px; overflow:hidden" allowtransparency="true"></iframe></p>
+                                    <!--<a href="https://a-ads.com?partner=1611481">KeAds</a>-->
+                                </div>
+                            </div></center>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="w3-grey w3-round-large " style="width:100%">
+               <div id="myBar" class="w3-container w3-teal w3-round-large w3-padding-16" style="height:6px; width:100%;">
+               </div>
+            </div>
+            <center>
+                <h6 id='subt' class="w3-text-teal"></h6>
+                <h6 id="myP" class="w3-text-theme">Carregando <span id="demo" class="w3-text-theme">0</span>%</h6>
+                <button id="btn" class="w3-button w3-border-none w3-deep-orange w3-text-white w3-hover-deep-orange" onclick="mylink()" target="_blank" style="border-radius:8px;"><h5>Continuar</h5></button></center>
+
+        </div>
+    </div>
+    <script id="myscript">
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 0;
+            var id = setInterval(frame, 75);
+
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    document.getElementById("myP").className = "w3-text-teal w3-animate-opacity";
+                    document.getElementById("myP").innerHTML = "Tupo pronto!";
+                    document.getElementById("btn").disabled = false;
+                    document.getElementById("btn").animate.style = true;
+                    document.getElementById("subt").innerHTML = ""
+                    document.getElementById("myBar").visible = false;
+                    elem.style = false
+                    myaction();
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    var num = width * 10 / 10;
+                    num = num.toFixed(0)
+                    document.getElementById("demo").innerHTML = num;
+                    document.getElementById("btn").disabled = true;
+
+                }
+            }
+        }
+    </script>
+
+    <script id="myscript">
+        move()
+    </script>
+    <script id="myaction">
+        function myaction() {
+            var v = setTimeout(function() {
+                myFunction2();
+            }, 30000);
+        }
+
+        function myFunction2() {
+            location.href = location.href
+        }
+
+        function mylink() {
+            window.open('https://kenegocios.github.io/app/mylinks');
+        }
+    </script>
+
+</body>
+
+</html>
