@@ -97,7 +97,7 @@
         }
 
         function mylink() {
-            window.open('https://bit.ly/' + variavel);
+            window.open(url + url_code);
         }
     </script>
     <script>
@@ -119,9 +119,9 @@
                   return undefined;   
               }   
         }
-        var variavel = queryString("ref");
-        var var2 = queryString ("id");
-        document.title = var2; 
+        var url = 'https://bit.ly/';
+        var url_code = queryString("ref");
+        document.title = queryString ("id"); 
     </script>
 </body>
 
