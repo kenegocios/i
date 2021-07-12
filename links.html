@@ -92,12 +92,12 @@ background-color: #836FFF;">
         <!--document.getElementById("1").href = "https://www.meliuz.com.br/i/ref_466e6c?ref_source=27";-->
         function btnclick(link,valor2) {
             <!--window.open(link);-->
-            var passaValor= function(valor)
+            var passaValor= function(valor1, valor2)
             {
              window.location = "https://kenegocios.github.io/i/goto?ref="+valor;
             }
-            var valorQueEuQueroPassar = link, valor2;
-            passaValor(valorQueEuQueroPassar, valor2);
+            var valorQueEuQueroPassar =  {link, valor2};
+            passaValor(valorQueEuQueroPassar);
         }
     </script>
 </body>
