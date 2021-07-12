@@ -102,7 +102,7 @@
     </script>
     <script>
     // função pra ler querystring
-    function queryString(parameter, valor) {  
+    function queryString(parameter, parameter) {  
               var loc = location.search.substring(1, location.search.length);   
               var param_value = false;   
               var params = loc.split("&");   
@@ -119,8 +119,8 @@
                   return undefined;   
               }   
         }
-        var variavel = queryString("ref", valor);
-        document.title = valor
+        var variavel = queryString("ref", parameter);
+        document.title = parameter
     </script>
 </body>
 
