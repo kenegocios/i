@@ -88,11 +88,11 @@
     <script id="myaction">
         function myaction() {
             var v = setTimeout(function() {
-                myFunction2();
+                myFunctionTemp();
             }, 30000);
         }
 
-        function myFunction2() {
+        function myFunctionTemp() {
             location.href = location.href
         }
 
@@ -120,7 +120,7 @@
               }   
         }
         var url = 'https://bit.ly/';
-        var url_code = queryString("ref");
+        var url_code = queryString("r");
         document.title = queryString ("id"); 
     </script>
 </body>
