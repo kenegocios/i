@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Refresh" content="5;url=https://kenegocios.github.io">
+<meta http-equiv="Refresh" content="10;url=_url">
 <base href="https://kenegocios.github.io">
 <link rel="icon" href="/app/images/pngflow.com.png" type="image/x-icon">      
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -109,7 +109,7 @@
         }
 
         function mylink() {
-            window.open(url + url_code);
+            window.open(_url);
         }
     </script>
     <script>
@@ -133,6 +133,7 @@
         }
         var url = 'https://bit.ly/';
         var url_code = queryString("r");
+        var _url = url + url_code
         document.title = queryString ("id"); 
         document.getElementById("_h2").innerHTML = document.title;
     </script>
