@@ -63,7 +63,7 @@
         <center>
             <h6 id='subt' class="w3-text-theme"></h6>
             <h6 id="myP" class="w3-text-theme">Aguardando... <span id="demo" class="w3-text-theme">0</span>%</h6>
-            <button id="btn" class="w3-button w3-border-none w3-deep-orange w3-text-white w3-hover-deep-orange" onclick="mylink()" target="_blank" style="border-radius:8px;"><h5>Continuar</h5></button>
+            <button id="btn" class="w3-button w3-border-none w3-deep-orange w3-text-white w3-hover-deep-orange" onclick="mylink()" target="_blank" style="border-radius:15px;"><h5>Continuar</h5></button>
         </center>
 
     </div>
@@ -76,7 +76,7 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
-                    document.getElementById("myP").className = "w3-text-teal w3-animate-opacity";
+                    document.getElementById("myP").className = "w3-text-theme w3-animate-opacity";
                     document.getElementById("myP").innerHTML = "Tupo pronto!";
                     document.getElementById("btn").disabled = false;
                     document.getElementById("btn").animate.style = true;
