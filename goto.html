@@ -69,7 +69,7 @@
     </div>
     <script id="myscript">
         function move() {
-            var elem = document.getElementById("myBar");
+            var bar = document.getElementById("myBar");
             var width = 0;
             var id = setInterval(frame, 75);
 
@@ -81,11 +81,11 @@
                     document.getElementById("btn").disabled = false;
                     document.getElementById("btn").animate.style = true;
                     document.getElementById("subt").innerHTML = "";
-                    elem.style.display = "none"; 
+                    bar.style.display = "none"; 
                     myaction();
                 } else {
                     width++;
-                    elem.style.width = width + '%';
+                    bar.style.width = width + '%';
                     var num = width * 10 / 10;
                     num = num.toFixed(0)
                     document.getElementById("demo").innerHTML = num;
